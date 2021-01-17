@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Архитектурно студио Атика</title>
+</head>
+<body>
+    <section class="showcase-section">
+        <div class="navbar-fixed">
+            <nav class="custom-navbar white">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="./" class="brand-logo left">
+                            <img src="./logo.png" alt="Atica Logo">
+                        </a>
+                        <a href="#" class="sidenav-trigger right" data-target="mobile-nav">
+                            <i class="material-icons grey-text text-darken-2 custom-icon">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a class="current" href="./">Начало</a></li>
+                            <li><a href="./about.html">За нас</a></li>
+                            <li><a href="./gallery.html">Проекти</a></li>
+                            <li><a href="./contact.html">Контакти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="grey lighten-4 about-section">
+        <div class="container">
+            <div class="row grey lighten-2 about-wrapper">
+                <h2 class="grey darken-2 white-text center">За нас</h4>
+                <p>Архитект Иванка Войникова е родена на 5 май 1951 г. в град Пловдив.  През 1969 г. завършва елитната гимназия “Димитър Благоев” (днес „Св. св. Кирил и Методий“) със златен медал и записва Архитектура в Университета по архитектура, строителство и геодезия (УАСГ) в София, който завършва през 1974 г. с отличен успех и награда.</p>
+                <p>Постъпва на работа в Софийската проектантска организация “Софпроект” и по-късно в творческото ателие на проф. Иван Татаров. Участва в проектирането на Окръжния народен съвет в Благоевград заедно с арх. Любомир Бонев, арх. Славей Гълъбов и арх. Михаил Манев.</p>
+                <p>През 1990 г. основава собствено архитектурно бюро “Текта”, а по-късно фирмата с ограничена отговорност “Атика–ИВ”, с които проектира повече от 30 многофамилни и еднофамилни жилищни сгради в София и страната.</p>
+                <a href="./about.html" class="btn red waves-effect waves-light custom-link">Прочети повече</a>
+            </div>
+        </div>
+    </section>
+    <section class="grey darken-4 gallery-section">
+        <div class="container">
+            <div class="row">
+                <h2 class="blue-grey darken-2 white-text center">Нашите проекти</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <div class="gallery-image left">
+                            <img src="./project1.png" alt="Project 1">
+                            <h4><a class="white-text" href="./project.html">Научи повече</a></h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image right">
+                            <img src="./project2.png" alt="Project 2">
+                            <h4><a class="white-text" a href="./project.html">Научи повече</a></h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image left">
+                            <img src="./project3.jpg" alt="Project 3">
+                            <h4><a class="white-text" href="./project.html">Научи повече</a></h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="gallery-image right">
+                            <img src="./project4.png" alt="Project 4">
+                            <h4><a class="white-text" href="./project.html">Научи повече</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <a href="./gallery.html" class="btn red waves-effect waves-light custom-link">Виж още</a>
+            </div>
+        </div>
+    </section>
+    <section class="grey lighten-2 contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l8 grey lighten-4 contact-form">
+                    <h2 class="grey darken-2 white-text center">За контакт</h2>
+                    <form>
+                        <div class="input-field">
+                            <input id="name" type="text" name="name" minlength="3" maxlength="30" required>
+                            <label for="name">Име</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" name="email" required>
+                            <label for="email">Електронна поща</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea" name="message"></textarea>
+                            <label for="message">Съобщение</label>
+                        </div>
+                        <button class="btn waves-effect waves-light custom-btn">Изпрати</button>
+                    </form>
+                </div>
+                <div class="col s12 m6 l4 grey lighten-4 contact-wrapper">
+                    <div class="contact-box">
+                        <h6 class="blue-grey darken-2 white-text"><span>Адрес</span><i class="material-icons contact-icon">home</i></h6>
+                        <p>София 1000</p>
+                        <p>ж.к. Гео Милев</p>
+                        <p>улица Иван Асен 1</p>
+                    </div>
+                    <div class="contact-box">
+                        <h6 class="blue-grey darken-2 white-text"><span>Телефон</span><i class="material-icons contact-icon">phone</i></h6>
+                        <p>(+359) 888 888 888</p>
+                    </div>
+                    <div class="contact-box">
+                        <h6 class="blue-grey darken-2 white-text"><span>Електронна поща</span><i class="material-icons contact-icon">email</i></h6>
+                        <p>somemail@somemail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="grey darken-2 center">
+        <p class="white-text">Архитектурно студио Атика &copy; 2021 Всички права запазени</p>
+    </footer>
+</body>
+</html>
