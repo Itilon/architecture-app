@@ -109,7 +109,7 @@ nav a.sidenav-trigger i {
 /* SHOWCASE SECTION */
 
 .showcase-section {
-    background-image: url(./showcase.jpg);
+    background-image: url(../assets/showcase.jpg);
     background-size: cover;
     background-position: center top;
     height: 100vh;
@@ -169,13 +169,6 @@ nav a.sidenav-trigger i {
     width: 100%;
     object-fit: cover;
     border-radius: 2px;
-    filter: grayscale(40%);
-    transition: all .8s ease-in-out;
-}
-
-.gallery-image:hover img {
-    transform: scale(1.04);
-    filter: grayscale(0);
 }
 
 .gallery-image h4 {
@@ -267,7 +260,7 @@ nav a.sidenav-trigger i {
 /* ABOUT PAGE */
 
 .about-header {
-    background-image: url(./about.png);
+    background-image: url(../assets/about.png);
 }
 
 .values-section {
@@ -321,7 +314,7 @@ nav a.sidenav-trigger i {
 /* GALLERY PAGE */
 
 .gallery-header {
-    background-image: url(./gallery.jpg);
+    background-image: url(../assets/gallery.jpg);
 }
 
 .image-container {
@@ -345,13 +338,6 @@ nav a.sidenav-trigger i {
     width: 100%;
     object-fit: cover;
     border-radius: 2px;
-    filter: grayscale(40%);
-    transition: all .8s ease-in-out;
-}
-
-.gallery-card:hover img {
-    transform: scale(1.04);
-    filter: grayscale(0);
 }
 
 .gallery-card h4 {
