@@ -46,6 +46,10 @@ nav a.sidenav-trigger i {
     line-height: 100px;
 }
 
+.material-placeholder {
+    height: 100%;
+}
+
 [class$="-header"] {
     background-size: contain;
     height: 120px;
