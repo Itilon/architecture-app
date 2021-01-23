@@ -388,20 +388,17 @@ nav a.sidenav-trigger i {
     padding: 40px 0;
 }
 
+.project-section .row {
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
 .project-section p {
-    padding: 40px 0 20px 0;
+    padding: 26px 0 32px 0;
     border-bottom: 1px dotted #616161;
-}
-
-.img-container {
-    height: 500px;
-    width: 100%;
-}
-
-.img-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 .slider .indicators .indicator-item.active {
