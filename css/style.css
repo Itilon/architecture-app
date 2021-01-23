@@ -52,8 +52,7 @@ nav a.sidenav-trigger i {
 
 [class$="-header"] {
     background-size: contain;
-    height: 120px;
-    padding-top: 30px;
+    padding: 20px;
 }
 
 [class$="-header"] h1 {
@@ -70,6 +69,11 @@ nav a.sidenav-trigger i {
     display: block;
     width: 40%;
     margin: 0 auto;
+}
+
+.back-link {
+    display: block;
+    margin: 40px auto;
 }
 
 .custom-icon {
@@ -263,10 +267,6 @@ nav a.sidenav-trigger i {
 
 /* ABOUT PAGE */
 
-.about-header {
-    background-image: url(../assets/about.png);
-}
-
 .values-section {
     padding: 20px 0;
 }
@@ -316,10 +316,6 @@ nav a.sidenav-trigger i {
 }
 
 /* GALLERY PAGE */
-
-.gallery-header {
-    background-image: url(../assets/gallery.jpg);
-}
 
 .image-container {
     height: 300px;
@@ -379,6 +375,37 @@ nav a.sidenav-trigger i {
     .gallery-header h1 {
         font-size: 1.6rem;
     }
+}
+
+/* PROJECT PAGE */
+
+.project-header h1 {
+    width: 60%;
+    font-size: 1.2rem;
+}
+
+.project-section {
+    padding: 40px 0;
+}
+
+.project-section p {
+    padding: 40px 0 20px 0;
+    border-bottom: 1px dotted #616161;
+}
+
+.img-container {
+    height: 500px;
+    width: 100%;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #26a69a;
 }
 
 /* CONTACT PAGE */
