@@ -28,8 +28,59 @@
             </div>
         </nav>
     </div>
+    <ul id="mobile-nav" class="sidenav grey lighten-2">
+        <li>
+            <div class="user-view"></div>
+        </li>
+        <li><a href="./">Начало</a></li>
+        <li><a href="./about.html">За нас</a></li>
+        <li><a href="./gallery.html">Проекти</a></li>
+        <li><a href="./contact.html">Контакти</a></li>
+    </ul>
+    <section class="map-section">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l8 grey lighten-4 contact-form">
+                    <h2 class="grey darken-2 white-text center">За контакт</h2>
+                    <form>
+                        <div class="input-field">
+                            <input id="name" type="text" name="name" minlength="3" maxlength="30" required>
+                            <label for="name">Име</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="email" type="email" name="email" required>
+                            <label for="email">Електронна поща</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea" name="message"></textarea>
+                            <label for="message">Съобщение</label>
+                        </div>
+                        <button class="btn waves-effect waves-light custom-btn">Изпрати</button>
+                    </form>
+                </div>
+                <div class="col s12 m6 l4 grey lighten-4 contact-wrapper">
+                    <div class="contact-box">
+                        <h6 class="blue-grey darken-2 white-text"><span>Адрес</span><i class="material-icons contact-icon">home</i></h6>
+                        <p>София 1000</p>
+                        <p>ж.к. Гео Милев</p>
+                        <p>улица Иван Асен 1</p>
+                    </div>
+                    <div class="contact-box">
+                        <h6 class="blue-grey darken-2 white-text"><span>Телефон</span><i class="material-icons contact-icon">phone</i></h6>
+                        <p>(+359) 888 888 888</p>
+                    </div>
+                    <div class="contact-box">
+                        <h6 class="blue-grey darken-2 white-text"><span>Електронна поща</span><i class="material-icons contact-icon">email</i></h6>
+                        <p>somemail@somemail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer class="grey darken-2 center">
         <p class="white-text">Архитектурно студио Атика &copy; 2021 Всички права запазени</p>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

@@ -381,6 +381,49 @@ nav a.sidenav-trigger i {
     }
 }
 
+/* CONTACT PAGE */
+
+.map-section {
+    background-image: url(../assets/map.png);
+    background-size: cover;
+    background-position: center top;
+    height: calc(100vh - 100px);
+    padding-top: 20vh;
+}
+
+.map-section .row {
+    display: flex;
+    margin-bottom: 0;
+}
+
+.map-section .contact-form {
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.map-section .contact-wrapper {
+    margin-left: 20px;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media only screen and (max-width: 600px) {
+    .map-section {
+        height: 120vh;
+    }
+
+    .map-section .row {
+        display: block;
+    }
+
+    .map-section .contact-form {
+        margin-bottom: 20px;
+    }
+}
+
 /* FOOTER */
 
 footer {
