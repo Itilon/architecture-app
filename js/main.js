@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
+    controlNavbarVisibility();
+
     const sidenavs = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sidenavs, {});
 
@@ -11,6 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
         onCloseEnd: onCloseEnd.bind(null, sliders[0])
     });
 });
+
+const controlNavbarVisibility = () => {
+    const navbar = document.querySelector('.custom-navbar');
+
+    let previousPosition = window.pageYOffset;
+
+    window.addEventListener('scroll', () => {
+        let currentPosition = window.pageYOffset;
+
+        navbar.style.top = (previousPosition < currentPosition && currentPosition > 150) ? '-100px' : '0';
+
+        previousPosition = currentPosition;
+    });
+};
 
 
 const onOpenStart = (slider) => {
