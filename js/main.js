@@ -6,5 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
     M.Slider.init(sliders, {});
 
     const images = document.querySelectorAll('.materialboxed');
-    M.Materialbox.init(images, {});
+    M.Materialbox.init(images, {
+        onOpenStart: onOpenStart.bind(null, sliders[0]),
+        onCloseEnd: onCloseEnd.bind(null, sliders[0])
+    });
 });
+
+
+const onOpenStart = (slider) => {
+    if (slider) {
+        const sliderInstance = M.Slider.getInstance(slider);
+        sliderInstance.pause();
+    }
+};
+
+const onCloseEnd = (slider) => {
+    if (slider) {
+        const sliderInstance = M.Slider.getInstance(slider);
+        sliderInstance.start();
+    }
+};
