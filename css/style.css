@@ -62,6 +62,27 @@ nav a.sidenav-trigger i {
     margin: 0 auto;
 }
 
+[class*='-message'] {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+    color: #fff;
+    animation: fadeIn 1.2s;
+}
+
+[class*='-message'] span {
+    cursor: pointer;
+}
+
+.success-message {
+    background: #4caf50;
+}
+
+.error-message {
+    background: #f44336;
+}
+
 .custom-btn {
     width: 100%;
 }
@@ -85,6 +106,15 @@ nav a.sidenav-trigger i {
 
 .h-margin {
     margin: 0 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
 }
 
 /* NAVIGATION */
@@ -170,7 +200,7 @@ nav a.sidenav-trigger i {
     overflow: hidden;
 }
 
-.gallery-image.right {
+.gallery-item:nth-child(even) .gallery-image {
     margin-left: 5%;
 }
 

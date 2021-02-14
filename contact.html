@@ -42,14 +42,16 @@
             <div class="row">
                 <div class="col s12 m6 l8 grey lighten-4 contact-form">
                     <h2 class="grey darken-2 white-text center">За контакт</h2>
-                    <form>
+                    <form method='POST' action='/inquiry'>
                         <div class="input-field">
-                            <input id="name" type="text" name="name" minlength="3" maxlength="30" required>
+                            <input id="name" type="text" name="name" minlength="3" maxlength="30" required class="validate">
                             <label for="name">Име</label>
+                            <span class="helper-text" data-error="Моля, попълни това поле правилно."></span>
                         </div>
                         <div class="input-field">
-                            <input id="email" type="email" name="email" required>
+                            <input id="email" type="email" name="email" required class="validate">
                             <label for="email">Електронна поща</label>
+                            <span class="helper-text" data-error="Моля, попълни това поле правилно."></span>
                         </div>
                         <div class="input-field">
                             <textarea id="message" class="materialize-textarea" name="message"></textarea>
